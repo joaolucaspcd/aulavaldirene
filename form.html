@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+     body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+}
+h1 {
+font-family: 'Georgia', serif;
+font-size: 40px;
+letter-spacing: 3px;
+margin-bottom: 30px;
+text-align: center;
+
+position: relative;
+animation: mover 3s infinite alternate ease-in-out;
+}
+
+@keyframes mover {
+0% {
+    left: -20px;
+    color: red;
+}
+
+50% {
+    color: blue;
+}
+
+100% {
+    left: 20px;
+    color: green;
+}
+}
+}
+
+
+@keyframes mover {
+from {
+    left: -20px;
+}
+to {
+    left: 20px;
+}
+}
+}
+
+form, fieldset {
+    width: 60%;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #d4a373;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+fieldset h3 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #b08968;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    margin: 30px auto 10px auto;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input[type="reset"] {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #b08968;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    width: 60%;
+    margin: 0 auto;
+}
+</style>
+<body style="background-color: thistle">
+
+<h1 style="text-align: center">𝙁𝙖𝙘̧𝙖 𝙨𝙚𝙪 𝙘𝙖𝙙𝙖𝙨𝙩𝙧𝙤 𝙖𝙦𝙪𝙞 !</h1>
+
+<form name="form-test" method="POST">                            
+<label> primeiro nome:</label>
+<input type="text" name="firstname">
+<br>
+<label> ultimo nome: </label>
+<input type="text" name="lastname">
+</form>
+
+<form>
+<input type="radio" nome="sexo" value="male"> masculino
+<input type="radio" nome="sexo" value="female"> feminino
+<br>
+</form>
+
+<label>Digite a senha de acesso</label>
+<input type="password" name="senha" size="10">
+<br>
+
+<input type="checkbox" name="carro"> Eu tenho um carro
+<br><br>
+
+<input type="checkbox" name="surf"> Eu tenho uma prancha de surf
+<br><br>
+
+<textarea cols="40" rows="10">Faça seu comentario</textarea>
+<br>
+
+<select name="select">
+<option value="sp">sao paulo</option>
+<option value="rj">rio de janeiro</option>
+<option value="mg">minas gerais</option>
+</select>
+
+<fieldset>
+<h3 style="text-align: center">dados pessoais</h3>
+<br>
+<label> nome: <input type="text" name="nome"/></label>
+<label> idade: <input type="text" name="idade"/></label>
+</fieldset>
+
+<fieldset>
+<h3 style="text-align: center">profissao</h3>
+<br>
+<label> profissao: <input type="text" name="idade"/></label>
+<label> setor: <input type="text" name="setor"/></label>
+</fieldset>
+
+<p>
+<label>email</label>
+<input type="email" name="email">
+</p>
+
+<label>hora</label>
+<input type="time" name="hora">
+
+<label>data de admissao</label><br>
+<input type="text" name="data_admissao">
+
+<label>digite sua idade</label>
+<input type="number" name="idade">
+
+<label>digite sua cor favorita</label>
+<input type="color" name="name">
+
+<label>digite seu curriculo </label>
+<input type="file" name="arquivo">
+
+<label>peso</label>
+<input type="range" id="peso" min="0" max="100">
+
+<button type="submit">enviar</button>
+<input type="reset" name="limpar" value="limpar">
+
+</body>
+</html>
