@@ -40,7 +40,7 @@
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            box-sizing: border-box; /* Garante que o padding não aumente o tamanho */
+            box-sizing: border-box;
         }
         input[type="submit"] {
             width: 100%;

@@ -1,24 +1,23 @@
 <?php
-// Coleta os dados do POST com segurança
+
 $nome = isset($_POST['nome']) ? htmlspecialchars($_POST['nome']) : "Não informado";
 $salario = isset($_POST['salario']) ? (float)$_POST['salario'] : 0;
 
-// Inicializa as variáveis de cálculo
+
 $aumento = 0;
 $salario_ajustado = $salario;
 $situacao = "";
-$cor_status = "#666"; // Cor padrão
+$cor_status = "#666"; 
 
-// Lógica de negócio (Aumento de 30% para quem ganha menos de 1621)
 if ($salario > 0 && $salario < 1621) {
     $aumento = $salario * 0.30;
     $salario_ajustado = $salario + $aumento;
     $situacao = "VOCÊ TEM DIREITO AO AUMENTO!";
-    $cor_status = "#155724"; // Verde
+    $cor_status = "#155724"; 
     $fundo_status = "#d4edda";
 } else {
     $situacao = "VOCÊ NÃO TEM DIREITO AO AUMENTO";
-    $cor_status = "#856404"; // Amarelo/Laranja escuro
+    $cor_status = "#856404";
     $fundo_status = "#fff3cd";
 }
 ?>
